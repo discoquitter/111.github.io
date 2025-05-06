@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Healthcare Journey</title>
+
+  <!-- Link to your CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Typing text effect -->
+  <div class="typing-container">
+    <span id="typing-text"></span>
+  </div>
+
+  <!-- Split About Me / Philosophy -->
+  <div class="split-container">
+    <div class="left">
+      <h2>About Me</h2>
+      <p>
+        My journey in healthcare started as the Head of Administration at Lilavati Hospital where we built some of Mumbai’s first patient service teams (long before "patient experience" became a buzzword). I then went on to lead the hospital’s international expansion into Kenya.<br><br>
+
+        Later, I scaled patient experience systems across multiple diagnostic centers at NM Medical, adapting to high-volume operations. Over the years, I’ve developed systems that serve everyone from families to high-profile patients like the Dalai Lama, Amitabh Bachchan, and Sachin Tendulkar.
+      </p>
+    </div>
+
+    <div class="right">
+      <h2>My Philosophy</h2>
+      <p>
+        Hospitals grow when patients trust them enough to return, refer others, and recover faster.<br><br>
+
+        In an industry defined by high stakes and noise, patient experience is one of the few true competitive advantages left. Not a checkbox, but a strategic asset that quietly compounds over time.<br><br>
+
+        I build sustainable, high-impact, patient-centric care models that actually work.<br><br>
+
+        I work with teams who understand:<br><br>
+
+        You don't win healthcare by marketing but by earning trust, the kind that people would choose with their lives, not once, but twice.
+      </p>
+    </div>
+  </div>
+
+  <!-- Typing script -->
+  <script>
+    const text = "You fixed the prescription, now fix the process.";
+    const typingSpeed = 80; // ms
+    let index = 0;
+
+    function type() {
+      if (index < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(type, typingSpeed);
+      }
+    }
+
+    window.onload = type;
+  </script>
+
+</body>
+</html>
 
